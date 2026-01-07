@@ -11,9 +11,9 @@ Este projeto é responsável pela interface de busca de filmes, exibição de re
 > Antes de iniciar o frontend, certifique-se de que o **Backend já esteja rodando**.
 
 Na raiz do projeto frontend, execute:
-
+```
 docker-compose up -d
-
+```
 A aplicação ficará disponível em:
 http://127.0.0.1:5173
 
@@ -26,10 +26,10 @@ http://127.0.0.1:5173
 3. Inicie o servidor de desenvolvimento  
 
 Comandos:
-
+```
 npm install  
 npm run dev  
-
+```
 A aplicação ficará disponível em:
 http://127.0.0.1:5173
 
