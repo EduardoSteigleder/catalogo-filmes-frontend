@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  catalogo-filmes-frontend:
+    build: .
+    container_name: catalogo-filmes-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -lc "npm install && npm run dev -- --host 0.0.0.0 --port 5173"
+    extra_hosts:
+      - "catalogo-filmes-backend:host-gateway"
